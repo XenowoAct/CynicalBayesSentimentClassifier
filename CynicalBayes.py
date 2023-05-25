@@ -108,7 +108,7 @@ def getGramLog(gram, freqDict, gramWeight):
 
 def GetLogPrior(labelledTweets):
     labels = labelledTweets.values()
-    Dneg = sum([1 for _ in labels if _ == 0])
+    Dneg = len(labels) - sum (labels)
     Dpos = sum(labels)
     return np.log(Dpos) - np.log(Dneg)
 
