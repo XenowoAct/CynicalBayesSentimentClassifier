@@ -33,9 +33,9 @@ A possitive prediction indicates that the module predicted positive sentiment, a
 
 Some clarifications on the arguments of the function `predictDoc` :
 
-doc: A string to be predicted.
-labelledTweets: A training dictionary in format {tweet:sentiment} where 0 means negative sentiment and 1 means positive.
-n: The maximum length for grams (word sequences) to train on. Values >=2 are recommended.
-minOcc: A value that will be used for filtering the gram dictionary. Any grams that have a number of occurences lower than this value will be deleted from the dictionary.
-gramWeight: 1 by default. Affects how much impact a gram will make due to it's length. 1 gramWeight means that grams of length 3 will be thrice as impactful in the calculations.
-removeStop: False by default. Set to True to remove stop words from the training set.
+1. doc: A string to be predicted.
+2. labelledTweets: A training dictionary in format {tweet:sentiment} where 0 means negative sentiment and 1 means positive.
+3. n: The maximum length for grams (word sequences) to train on. Values >=2 are recommended.
+4. minOcc: A value that will be used for filtering the gram dictionary. Any grams that have a number of occurences lower than this value will be deleted from the dictionary.
+5. gramWeight: 1 by default. Affects how much impact a gram will make due to it's length. 1 gramWeight means that grams of length 3 will be thrice as impactful in the calculations.
+6. removeStop: False by default. Set to True to remove stop words from the training set.
