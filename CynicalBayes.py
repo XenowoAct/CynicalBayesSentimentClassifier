@@ -123,7 +123,7 @@ def predictDoc(doc,labelledTweets,n,minOcc,gramWeight=1,removeStop=False):
 
 
 #Example Set
-tweets = {'hey there, I love you bino!':1,'Oh, I actually fucking hate bino ngl':0,'Freedom is the best thing ever!':1,"You all should kill yourselves NOW":0,'Hey there, fuck you!':0,'that movie was not good at all!':0,'that was a good movie!':1}
+tweets = {'hey there, I love you bino!':1,'Oh, I actually freakin hate bino ngl':0,'Freedom is the best thing ever!':1,"Bloody hell! That scene was awful!":0,'Hey there, I hate you!':0,'that movie was not good at all!':0,'that was a good movie!':1}
 
 print(predictDoc('bino is good! I love bino',tweets,3,0))
 
