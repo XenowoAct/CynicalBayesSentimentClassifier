@@ -109,7 +109,7 @@ def getGramLog(gram, freqDict, gramWeight):
 def GetLogPrior(labelledTweets):
     labels = labelledTweets.values()
     Dneg = sum([1 for _ in labels if _ == 0])
-    Dpos = sum([1 for _ in labels if _ == 1])
+    Dpos = sum(labels)
     return np.log(Dpos) - np.log(Dneg)
 
 def predictDoc(doc,labelledTweets,n,minOcc,gramWeight=1,removeStop=False):
